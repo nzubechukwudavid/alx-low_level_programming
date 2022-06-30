@@ -6,7 +6,7 @@
 * main- This is my main function
 * Return: It must be a value of 0
 */
-int main(void)
+int main(void)  
 {
 char alx_char = 'A';
 int alx_int = 3;
