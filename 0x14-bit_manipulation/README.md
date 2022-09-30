@@ -1,1 +1,1 @@
-Learnig how to manipulate and use bitwise operators in C
+# More Learning on singly linked list

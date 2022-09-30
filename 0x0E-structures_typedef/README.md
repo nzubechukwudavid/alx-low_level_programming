@@ -1,1 +1,1 @@
-learning structures typedef in C
+# Learn Struct and Typedef

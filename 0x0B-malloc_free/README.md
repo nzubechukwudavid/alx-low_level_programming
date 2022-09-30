@@ -1,1 +1,1 @@
-learning memory allocation
+# Dynamic memory allocation

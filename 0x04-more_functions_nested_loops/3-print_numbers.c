@@ -1,15 +1,20 @@
-#include "main.h"
+#include "holberton.h"
+
 /**
-* print_numbers - prints numbers 0-9
-*
-* Return: void
-*/
+ * print_numbers - prints numbers
+ * Return:0
+ */
+
 void print_numbers(void)
 {
-int c;
-for (c = '0'; c <= '9'; c++)
-{
-_putchar(c);
-}
-_putchar('\n');
+	char n = 0;
+
+	while (n <= 9)
+	{
+		_putchar('0' + n);
+		n++;
+
+	}
+	_putchar('\n');
+
 }

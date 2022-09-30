@@ -1,1 +1,1 @@
-learming pointers, arrays and strings in c programming with alx
+# Learning Pointers, arrays and strings in C

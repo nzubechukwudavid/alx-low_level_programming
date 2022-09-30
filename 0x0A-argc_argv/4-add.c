@@ -1,27 +1,44 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 /**
-* main - adds positive numbers.
-* @argc: number of command line arguments.
-* @argv: array that contains the program command line arguments.
-* Return: 0 - success.
-*/
-int main(int argc, char *argv[])
+ * isInteger - checks if s is an integer
+ * @s: string to check
+ * Return: 0 or 1
+ */
+
+int isInteger(const char *s)
 {
-int i, j, add = 0;
-for (i = 1; i < argc; i++)
+int i = 0;
+while (s[i] != '\0')
 {
-for (j = 0; argv[i][j] != '\0'; j++)
-{
-if (!isdigit(argv[i][j]))
-{
-printf("Error\n");
-return (1);
+	if (s[i] < '0' || s[i] > '9')
+		return (1);
+	i++;
 }
+return (0);
 }
-add += atoi(argv[i]);
+
+/**
+ * main - adds positive numbers
+ * @argc: int
+ * @argv: list
+ * Return: 0
+ */
+
+int main(int argc, char const *argv[])
+{
+int sum = 0;
+while (--argc)
+{
+	if (isInteger(argv[argc]))
+	{
+		printf("Error\n");
+		return (1);
+	}
+	sum += atoi(argv[argc]);
 }
-printf("%d\n", add);
+
+printf("%i\n", sum);
+
 return (0);
 }

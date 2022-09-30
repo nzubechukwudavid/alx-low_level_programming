@@ -1,1 +1,1 @@
-learning function pointers in C
+# Function pointers

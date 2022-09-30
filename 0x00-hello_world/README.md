@@ -1,3 +1,1 @@
-"0x00-hello_world"
-
-First 'C' Task
+First C codes with Holberton: compiling c program and hello world code
